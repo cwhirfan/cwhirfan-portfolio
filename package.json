@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "build": "node build-site.js"
+  },
   "devDependencies": {
     "csscomb": "^4.3.0",
     "prettier": "^3.9.6"
