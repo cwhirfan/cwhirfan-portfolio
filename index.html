@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Che Wan Harith Irfan, Data Analyst and Data Professional." />
+  <title>Harith Irfan | Data Analyst Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23060910' width='100' height='100' rx='10'/><text x='50' y='60' font-size='60' font-weight='bold' text-anchor='middle' fill='%2353e3ff' font-family='Arial'>HI</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="grid-bg"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home"><img class="brand-mark" src="assets/pfp-harith.png" alt="Profile" loading="lazy"><span>Harith.Irfan</span></a>
+    <nav class="nav" id="navMenu">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#showcase">Showcase</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">DATA ANALYST • BI • DATA VISUALIZATION</p>
+        <h1>I turn complex data into <span class="gradient-text">clear decisions.</span></h1>
+        <p class="hero-desc">
+          Data Professional with 3+ years of hands-on experience across analytics, data science, reporting, and database engineering. I build dashboards, automate reporting, and translate raw data into actionable insights.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">Explore My Work</a>
+          <a class="btn btn-ghost" href="Harith-Irfan-Resume.pdf" target="_blank">View Resume</a>
+        </div>
+        <div class="social-row">
+          <a href="https://www.linkedin.com/in/che-wan-harith-irfan-4b5132268/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <a href="mailto:cwhirfan90@gmail.com">Email ↗</a>
+          <span>Kuala Lumpur, MY</span>
+        </div>
+      </div>
+
+      <div class="hero-panel reveal">
+        <div class="terminal-card">
+          <div class="terminal-top"><span></span><span></span><span></span><b>analytics_profile.sql</b></div>
+          <pre><code><span class="sql-key">SELECT</span>
+  name,
+  role,
+  experience,
+  dashboards,
+  reports,
+  status
+<span class="sql-key">FROM</span> portfolio
+<span class="sql-key">WHERE</span> 
+  name = <span class="sql-string">'Harith Irfan'</span>
+  <span class="sql-key">AND</span> role = <span class="sql-string">'Data Analyst'</span>;
+
+<span class="comment">-- query result</span>
+name        : Harith Irfan
+role        : Data Analyst
+experience  : 3+ years
+dashboards  : 50+
+reports     : 200+
+status      : available_for_impact</code></pre>
+        </div>
+        <div class="metric-grid">
+          <div class="metric-card"><strong>200+</strong><span>SSRS Reports</span></div>
+          <div class="metric-card"><strong>50+</strong><span>Dashboards</span></div>
+          <div class="metric-card"><strong>3+</strong><span>Years Experience</span></div>
+          <div class="metric-card"><strong>4</strong><span>Featured Projects</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-heading reveal">
+        <span>01 / ABOUT</span>
+        <h2>Building clarity from data.</h2>
+      </div>
+      <div class="about-layout">
+        <div class="about-copy-stack">
+          <article class="glass-card about-copy reveal">
+            <p>
+              I specialize in business intelligence, dashboard engineering, SQL analytics, reporting automation, and data storytelling. My work spans nationwide examination platforms, state-level land revenue analytics, enterprise reporting, and internal data enablement.
+            </p>
+            <p>
+              Beyond development, I also deliver technical training in Apache Superset, Python, Selenium automation, and data visualization.
+            </p>
+          </article>
+
+          <div class="mini-dashboard glass-card reveal">
+            <div class="mini-title">PROFILE SIGNALS</div>
+            <div class="bar-row"><span>SQL & Reporting</span><i style="--w:94%"></i><b>94%</b></div>
+            <div class="bar-row"><span>Dashboarding / BI</span><i style="--w:92%"></i><b>92%</b></div>
+            <div class="bar-row"><span>Data Storytelling</span><i style="--w:88%"></i><b>88%</b></div>
+            <div class="bar-row"><span>Programming</span><i style="--w:78%"></i><b>78%</b></div>
+          </div>
+        </div>
+
+        <div class="about-portrait reveal" aria-label="Portrait of Harith Irfan">
+          <div class="portrait-orbit orbit-one"></div>
+          <div class="portrait-orbit orbit-two"></div>
+          <div class="portrait-data-line line-a"></div>
+          <div class="portrait-data-line line-b"></div>
+          <div class="portrait-glow"></div>
+          <div class="portrait-grid"></div>
+          <div class="portrait-frame">
+            <div class="portrait-placeholder">
+              <img src="assets/profile-harith.png" alt="Che Wan Harith Irfan" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <!-- <span>TRANSPARENT PNG</span>
+              <strong>ADD YOUR PORTRAIT</strong>
+              <small>assets/profile-harith.png</small> -->
+            </div>
+          </div>
+          <div class="portrait-badge badge-role"><span>ROLE</span><strong>DATA ANALYST</strong></div>
+          <div class="portrait-badge badge-status"><i></i><span>DATA-DRIVEN</span></div>
+          <div class="portrait-caption"><span>HARITH.IRFAN</span><b>Analytics • BI • Data Visualization</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="section-heading reveal">
+        <span>02 / EXPERIENCE</span>
+        <h2>Professional timeline.</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <div class="timeline-date">07/2025 — Present</div>
+          <div class="timeline-content glass-card">
+            <div class="role-line"><div><h3>Data Analyst</h3><p>Zanko Sdn. Bhd.</p></div><span class="status-pill">CURRENT</span></div>
+            <ul>
+              <li>Maintain and optimize interactive dashboards for the Online Marking System under Lembaga Peperiksaan Malaysia and Kementerian Pendidikan Malaysia.</li>
+              <li>Led migration of 50+ dashboards from AWS QuickSight to Alibaba QuickBI and cross-account QuickSight migrations using AWS CLI.</li>
+              <li>Develop operational dashboards using SQL and AWS QuickSight for data-driven decision-making.</li>
+              <li>Developed the Executive Dashboard for Sistem Hasil Tanah Johor using Apache Superset.</li>
+              <li>Enhanced Superset dashboards with custom number formats and Jinja-driven dynamic filtering.</li>
+              <li>Main trainer and speaker for Apache Superset training; speaker and trainer for Python for Beginners and Selenium automation.</li>
+              <li>Monitor dashboard data and key examination metrics to ensure accurate and reliable reporting throughout examination operations.</li>
+              <li>Develop and enhance analytical dashboards to improve visibility of operational performance, progress, and key indicators.</li>
+              <li>Build and optimize complex SQL queries for analytical datasets and dashboard visualizations.</li>
+              <li>Work with ClickHouse as an analytical database for high-volume dashboard datasets and reporting requirements.</li>
+              <li>Develop and maintain ClickHouse views and materialized views to support dashboard performance and reusable analytical datasets.</li>
+              <li>Apply custom CSS to improve dashboard presentation, responsiveness, and overall user experience.</li>
+              <li>Analyze and troubleshoot data discrepancies across dashboards, SQL queries, datasets, and source systems.</li>
+              <li>Collaborate with project and technical teams to translate business and reporting requirements into dashboards and analytical solutions.</li>
+              <li>Develop dashboard mockups and visualization concepts to support project discussions, demonstrations, and proposed solutions.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-date">03/2025 — 07/2025</div>
+          <div class="timeline-content glass-card">
+            <h3>Data Analyst Intern</h3><p>Zanko Sdn. Bhd.</p>
+            <ul>
+              <li>Developed dashboard mockups for RTM and IFOS projects to support data visualization requirements and tender documentation.</li>
+              <li>Designed visualization concepts to demonstrate how operational and analytical data could be presented through interactive dashboards.</li>
+              <li>Assisted in translating project requirements into suitable dashboard layouts, KPIs, charts, and reporting structures.</li>
+              <li>Created beginner-friendly learning modules for Python Programming to support internal learning and technical training.</li>
+              <li>Developed introductory Tableau learning materials covering data visualization concepts and dashboard development.</li>
+              <li>Prepared practical examples and exercises to make technical concepts easier for beginner-level participants to understand.</li>
+              <li>Assisted with internal data analysis and visualization tasks using SQL and business intelligence tools.</li>
+              <li>Supported dashboard prototyping and proof-of-concept activities for upcoming projects and proposals.</li>
+              <li>Assisted in preparing technical documentation and presentation materials for project and tender activities.</li>
+              <li>Assisted in drafting technical proposals for the MITI project tender, particularly sections related to data management.</li>
+              <li>Worked with senior team members to understand business requirements and translate them into technical and visualization concepts.</li>
+              <li>Gained hands-on exposure to real-world BI projects, dashboard development, data analysis, and technical proposal preparation.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-date">03/2023 — 10/2024</div>
+          <div class="timeline-content glass-card">
+            <h3>IT Executive (Part-Time)</h3><p>Lee’s Frozen Food Sdn. Bhd.</p>
+            <ul>
+              <li>Designed and maintained 100+ business reports using SQL and Microsoft Report Builder to support operational reporting across the organization.</li>
+              <li>Developed SQL queries to extract, transform, aggregate, and present business data according to departmental reporting requirements.</li>
+              <li>Developed ad-hoc reports for C-level executives, providing relevant information to support business planning and management decision-making.</li>
+              <li>Worked with stakeholders from different departments to understand reporting requirements and translate them into structured reports.</li>
+              <li>Collaborated with cross-functional teams to identify relevant data and generate actionable, data-driven insights.</li>
+              <li>Modified and enhanced existing reports based on evolving business requirements and user feedback.</li>
+              <li>Investigated report discrepancies by validating SQL queries and comparing report outputs against underlying database records.</li>
+              <li>Supported day-to-day reporting requirements by providing data extracts and customized reports when required.</li>
+              <li>Worked with business data stored within the Microsoft Dynamics GP ecosystem for reporting and operational analysis.</li>
+              <li>Performed weekly reconciliation of the Microsoft Dynamics GP system database to help maintain consistency and reliability of business data.</li>
+              <li>Assisted in identifying discrepancies between system records and reporting outputs during reconciliation activities.</li>
+              <li>Maintained existing reporting solutions to ensure continued availability for operational users.</li>
+              <li>Supported users with report-related issues and assisted in resolving data or reporting problems.</li>
+              <li>Built practical experience working with production databases, enterprise reporting systems, and business-critical data.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-date">09/2022 — 03/2023</div>
+          <div class="timeline-content glass-card">
+            <h3>IT Intern</h3><p>Lee’s Frozen Food Sdn. Bhd.</p>
+            <ul>
+              <li>Designed and developed an IT hardware inventory management system to improve asset tracking and maintain accurate inventory records.</li>
+              <li>Structured the inventory system to centralize hardware information and simplify the management of IT assets.</li>
+              <li>Assisted in maintaining IT hardware records and ensuring asset information remained organized and accessible.</li>
+              <li>Assisted in developing and maintaining 100+ business reports using SQL and SSRS for multiple departments.</li>
+              <li>Wrote and modified SQL queries to retrieve data required for operational and management reports.</li>
+              <li>Assisted in updating existing SSRS reports based on departmental requirements and requested changes.</li>
+              <li>Supported report testing and validation to ensure displayed information matched the underlying data.</li>
+              <li>Assisted with troubleshooting report-related issues and identifying potential SQL or data problems.</li>
+              <li>Worked with different departments to understand their reporting needs and required information.</li>
+              <li>Gained practical experience working with SQL databases, SSRS, enterprise reporting, and Microsoft Dynamics GP.</li>
+              <li>Supported general IT and data-related tasks as part of day-to-day business operations.</li>
+              <li>Developed an understanding of how reporting systems and databases support operational decision-making within a business environment.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-heading reveal">
+        <span>03 / PROJECTS</span>
+        <h2>Selected work & systems.</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <div class="project-visual chart-visual">
+            <div class="chart-bars"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="scanline"></div>
+          </div>
+          <div class="project-body"><div class="project-meta"><span>BI / GOVERNMENT</span><b>01</b></div><h3>Online Marking System</h3><p>Developed and enhanced nationwide examination dashboards for LPSkor, E-Marks, and MPMSkor, improving KPI visibility and reducing manual reporting.</p><div class="tags"><span>AWS QuickSight</span><span>QuickBI</span><span>SQL</span><span>AWS CLI</span></div></div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-visual map-visual"><div class="map-dot a"></div><div class="map-dot b"></div><div class="map-dot c"></div><div class="map-line l1"></div><div class="map-line l2"></div></div>
+          <div class="project-body"><div class="project-meta"><span>ANALYTICS / STATE GOV</span><b>02</b></div><h3>Sistem Hasil Tanah Johor V3</h3><p>Designed Apache Superset dashboards for PTG Johor to support real-time monitoring of land revenue collection, trends, and executive-level analysis.</p><div class="tags"><span>Apache Superset</span><span>ClickHouse</span><span>SQL</span><span>Jinja</span></div></div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-visual network-visual"><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="project-body"><div class="project-meta"><span>MOBILE / FULL-STACK</span><b>03</b></div><h3>Kinwise</h3><p>Household chores management mobile application with automated round-robin assignment, scheduling, gamification, leaderboard mechanics, and Firebase backend services.</p><div class="tags"><span>React Native</span><span>Expo</span><span>Firebase</span><span>Cloud Functions</span></div></div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-visual booking-visual"><div class="ticket"><span>SEBS</span><b>BOOKED</b></div></div>
+          <div class="project-body"><div class="project-meta"><span>WEB / SYSTEM</span><b>04</b></div><h3>UiTM Sport Equipment Booking System</h3><p>Full-stack Laravel and MySQL booking solution for Unit Sukan UiTM Shah Alam, digitizing equipment reservations and reducing manual administration.</p><div class="tags"><span>Laravel</span><span>MySQL</span><span>PHP</span><span>Web App</span></div></div>
+        </article>
+      </div>
+    </section>
+
+
+    <section class="section" id="showcase">
+      <div class="section-heading reveal">
+        <span>04 / SHOWCASE</span>
+        <h2>Dashboards in action. Knowledge in motion.</h2>
+      </div>
+
+      <!-- <div class="showcase-intro reveal">
+        <p>A visual collection of selected analytics work, dashboard interfaces, training sessions, and speaking engagements. Replace the placeholders below with your own screenshots and photos inside the <code>assets/</code> folder.</p>
+      </div> -->
+
+      <div class="showcase-block">
+        <div class="showcase-label reveal">
+          <div>
+            <!-- <span class="showcase-kicker">DASHBOARD GALLERY</span> -->
+            <h3>Analytics I’ve built.</h3></div>
+          <p>Selected BI and reporting interfaces across government, operational, and executive analytics projects.</p>
+        </div>
+        <div class="dashboard-gallery">
+          <article class="gallery-card gallery-wide reveal" data-gallery-title="OMS — Dashboard Ringkasan Semak Semula">
+            <div class="gallery-carousel-container">
+              <div class="gallery-carousel-wrapper">
+                <div class="gallery-media placeholder-media">
+                  <img src="assets/lpskor-1.png" alt="Additional analytics dashboard screenshot" loading="lazy" onerror="this.style.display='none'">
+                  <div class="placeholder-copy"><span>01</span><b>ADD LPKSOR DASHBOARD</b><small>assets/lpskor-1.png</small></div>
+                  <div class="media-grid"></div>
+                </div>
+              </div>
+              <button class="gallery-carousel-nav gallery-carousel-prev" aria-label="Previous photo">❮</button>
+              <button class="gallery-carousel-nav gallery-carousel-next" aria-label="Next photo">❯</button>
+              <div class="gallery-carousel-dots"></div>
+            </div>
+            <div class="gallery-copy"><div><span>LPSKOR</span><h4>Online Marking System Review Summary Dashboard</h4></div><div class="tags"><span>AWS QuickSight</span><span>SQL</span><span>Data Viz</span></div></div>
+          </article>
+
+          <article class="gallery-card gallery-wide reveal" data-gallery-title="SPMJM — Executive Dashboard Mockup">
+            <div class="gallery-carousel-container">
+              <div class="gallery-carousel-wrapper">
+                <div class="gallery-media placeholder-media">
+                  <img src="assets/spmjm-1.png" alt="Additional analytics dashboard screenshot" loading="lazy" onerror="this.style.display='none'">
+                  <div class="placeholder-copy"><span>01</span><b>ADD SPMJM DASHBOARD</b><small>assets/spmjm-1.png</small></div>
+                  <div class="media-grid"></div>
+                </div>
+                <div class="gallery-media placeholder-media">
+                  <img src="assets/spmjm-2.png" alt="Additional analytics dashboard screenshot 2" loading="lazy" onerror="this.style.display='none'">
+                  <div class="placeholder-copy"><span>02</span><b>ADD SPMJM DASHBOARD 2</b><small>assets/spmjm-2.png</small></div>
+                  <div class="media-grid"></div>
+                </div>
+              </div>
+              <button class="gallery-carousel-nav gallery-carousel-prev" aria-label="Previous photo">❮</button>
+              <button class="gallery-carousel-nav gallery-carousel-next" aria-label="Next photo">❯</button>
+              <div class="gallery-carousel-dots"></div>
+            </div>
+            <div class="gallery-copy"><div><span>SPMJM</span><h4>Sistem Pengurusan Maklumat Jururawat Malaysia Executive Dashboard Mockup</h4></div><div class="tags"><span>AWS QuickSight</span><span>Python</span><span>Data Viz</span></div></div>
+          </article>
+
+          <article class="gallery-card gallery-wide reveal" data-gallery-title="Online Marking System — Examination Monitoring">
+            <div class="gallery-carousel-container">
+              <div class="gallery-carousel-wrapper">
+                <div class="gallery-media placeholder-media">
+                  <img src="assets/shtj-1.png" alt="Online Marking System dashboard screenshot" loading="lazy" onerror="this.style.display='none'">
+                  <div class="placeholder-copy"><span>01</span><b>ADD SHTJ DASHBOARD</b><small>assets/shtj-1.png</small></div>
+                  <div class="media-grid"></div>
+                </div>
+                <div class="gallery-media placeholder-media">
+                  <img src="assets/shtj-2.png" alt="Online Marking System dashboard screenshot 2" loading="lazy" onerror="this.style.display='none'">
+                  <div class="placeholder-copy"><span>02</span><b>ADD SHTJ DASHBOARD 2</b><small>assets/shtj-2.png</small></div>
+                  <div class="media-grid"></div>
+                </div>
+                <div class="gallery-media placeholder-media">
+                  <img src="assets/shtj-3.png" alt="Online Marking System dashboard screenshot 3" loading="lazy" onerror="this.style.display='none'">
+                  <div class="placeholder-copy"><span>03</span><b>ADD SHTJ DASHBOARD 3</b><small>assets/shtj-3.png</small></div>
+                  <div class="media-grid"></div>
+                </div>
+                <div class="gallery-media placeholder-media">
+                  <img src="assets/shtj-4.png" alt="Online Marking System dashboard screenshot 4" loading="lazy" onerror="this.style.display='none'">
+                  <div class="placeholder-copy"><span>04</span><b>ADD SHTJ DASHBOARD 4</b><small>assets/shtj-4.png</small></div>
+                  <div class="media-grid"></div>
+                </div>
+                <div class="gallery-media placeholder-media">
+                  <img src="assets/shtj-5.png" alt="Online Marking System dashboard screenshot 5" loading="lazy" onerror="this.style.display='none'">
+                  <div class="placeholder-copy"><span>05</span><b>ADD SHTJ DASHBOARD 5</b><small>assets/shtj-5.png</small></div>
+                  <div class="media-grid"></div>
+                </div>
+              </div>
+              <button class="gallery-carousel-nav gallery-carousel-prev" aria-label="Previous photo">❮</button>
+              <button class="gallery-carousel-nav gallery-carousel-next" aria-label="Next photo">❯</button>
+              <div class="gallery-carousel-dots"></div>
+            </div>
+            <div class="gallery-copy"><div><span>SHTJ V3</span><h4>Land Revenue Executive Analytics</h4></div><div class="tags"><span>Superset</span><span>SQL</span><span>ClickHouse</span><span>Jinja</span></div></div>
+          </article>
+
+          <article class="gallery-card gallery-wide reveal" data-gallery-title="NCCDR — Analytics Mockup">
+            <div class="gallery-carousel-container">
+              <div class="gallery-carousel-wrapper">
+                <div class="gallery-media placeholder-media">
+                  <img src="assets/kkr-1.png" alt="NCCDR dashboard screenshot" loading="lazy" onerror="this.style.display='none'">
+                  <div class="placeholder-copy"><span>01</span><b>ADD NCCDR DASHBOARD</b><small>assets/kkr-1.png</small></div>
+                  <div class="media-grid"></div>
+                </div>
+                <div class="gallery-media placeholder-media">
+                  <img src="assets/kkr-2.png" alt="NCCDR dashboard screenshot 2" loading="lazy" onerror="this.style.display='none'">
+                  <div class="placeholder-copy"><span>02</span><b>ADD NCCDR DASHBOARD 2</b><small>assets/kkr-2.png</small></div>
+                  <div class="media-grid"></div>
+                </div>
+                <div class="gallery-media placeholder-media">
+                  <img src="assets/kkr-3.png" alt="NCCDR dashboard screenshot 3" loading="lazy" onerror="this.style.display='none'">
+                  <div class="placeholder-copy"><span>03</span><b>ADD NCCDR DASHBOARD 3</b><small>assets/kkr-3.png</small></div>
+                  <div class="media-grid"></div>
+                </div>
+                <div class="gallery-media placeholder-media">
+                  <img src="assets/kkr-4.png" alt="NCCDR dashboard screenshot 4" loading="lazy" onerror="this.style.display='none'">
+                  <div class="placeholder-copy"><span>04</span><b>ADD NCCDR DASHBOARD 4</b><small>assets/kkr-4.png</small></div>
+                  <div class="media-grid"></div>
+                </div>
+                <div class="gallery-media placeholder-media">
+                  <img src="assets/kkr-5.png" alt="NCCDR dashboard screenshot 5" loading="lazy" onerror="this.style.display='none'">
+                  <div class="placeholder-copy"><span>05</span><b>ADD NCCDR DASHBOARD 5</b><small>assets/kkr-5.png</small></div>
+                  <div class="media-grid"></div>
+                </div>
+              </div>
+              <button class="gallery-carousel-nav gallery-carousel-prev" aria-label="Previous photo">❮</button>
+              <button class="gallery-carousel-nav gallery-carousel-next" aria-label="Next photo">❯</button>
+              <div class="gallery-carousel-dots"></div>
+            </div>
+            <div class="gallery-copy"><div><span>NCCDR</span><h4>National Construction Centralised Data Repository Analytics Mockup</h4></div><div class="tags"><span>PowerBI</span><span>Excel</span><span>Python</span></div></div>
+          </article>
+
+          <article class="gallery-card gallery-wide reveal" data-gallery-title="Politeknik — Analytics Mockup">
+            <div class="gallery-carousel-container">
+              <div class="gallery-carousel-wrapper">
+                <div class="gallery-media placeholder-media">
+                  <img src="assets/poli-1.png" alt="Additional analytics dashboard screenshot" loading="lazy" onerror="this.style.display='none'">
+                  <div class="placeholder-copy"><span>01</span><b>ADD POLITEKNIK DASHBOARD</b><small>assets/poli-1.png</small></div>
+                  <div class="media-grid"></div>
+                </div>
+                <div class="gallery-media placeholder-media">
+                  <img src="assets/poli-2.png" alt="Additional analytics dashboard screenshot 2" loading="lazy" onerror="this.style.display='none'">
+                  <div class="placeholder-copy"><span>02</span><b>ADD POLITEKNIK DASHBOARD 2</b><small>assets/poli-2.png</small></div>
+                  <div class="media-grid"></div>
+                </div>
+                <div class="gallery-media placeholder-media">
+                  <img src="assets/poli-3.png" alt="Additional analytics dashboard screenshot 3" loading="lazy" onerror="this.style.display='none'">
+                  <div class="placeholder-copy"><span>03</span><b>ADD POLITEKNIK DASHBOARD 3</b><small>assets/poli-3.png</small></div>
+                  <div class="media-grid"></div>
+                </div>
+                <div class="gallery-media placeholder-media">
+                  <img src="assets/poli-4.png" alt="Additional analytics dashboard screenshot 4" loading="lazy" onerror="this.style.display='none'">
+                  <div class="placeholder-copy"><span>04</span><b>ADD POLITEKNIK DASHBOARD 4</b><small>assets/poli-4.png</small></div>
+                  <div class="media-grid"></div>
+                </div>
+                <div class="gallery-media placeholder-media">
+                  <img src="assets/poli-5.png" alt="Additional analytics dashboard screenshot 5" loading="lazy" onerror="this.style.display='none'">
+                  <div class="placeholder-copy"><span>05</span><b>ADD POLITEKNIK DASHBOARD 5</b><small>assets/poli-5.png</small></div>
+                  <div class="media-grid"></div>
+                </div>
+              </div>
+              <button class="gallery-carousel-nav gallery-carousel-prev" aria-label="Previous photo">❮</button>
+              <button class="gallery-carousel-nav gallery-carousel-next" aria-label="Next photo">❯</button>
+              <div class="gallery-carousel-dots"></div>
+            </div>
+            <div class="gallery-copy"><div><span>POLITEKNIK</span><h4>Politeknik Analytics Mockup</h4></div><div class="tags"><span>PowerBI</span><span>Python</span><span>Data Viz</span></div></div>
+          </article>
+
+          <article class="gallery-card gallery-wide reveal" data-gallery-title="IFOS — Analytics Mockup">
+            <div class="gallery-carousel-container">
+              <div class="gallery-carousel-wrapper">
+                <div class="gallery-media placeholder-media">
+                  <img src="assets/ifos-1.png" alt="Additional analytics dashboard screenshot" loading="lazy" onerror="this.style.display='none'">
+                  <div class="placeholder-copy"><span>01</span><b>ADD IFOS DASHBOARD</b><small>assets/ifos-1.png</small></div>
+                  <div class="media-grid"></div>
+                </div>
+                <div class="gallery-media placeholder-media">
+                  <img src="assets/ifos-2.png" alt="Additional analytics dashboard screenshot 2" loading="lazy" onerror="this.style.display='none'">
+                  <div class="placeholder-copy"><span>02</span><b>ADD IFOS DASHBOARD 2</b><small>assets/ifos-2.png</small></div>
+                  <div class="media-grid"></div>
+                </div>
+                <div class="gallery-media placeholder-media">
+                  <img src="assets/ifos-3.png" alt="Additional analytics dashboard screenshot 3" loading="lazy" onerror="this.style.display='none'">
+                  <div class="placeholder-copy"><span>03</span><b>ADD IFOS DASHBOARD 3</b><small>assets/ifos-3.png</small></div>
+                  <div class="media-grid"></div>
+                </div>
+                <div class="gallery-media placeholder-media">
+                  <img src="assets/ifos-4.png" alt="Additional analytics dashboard screenshot 4" loading="lazy" onerror="this.style.display='none'">
+                  <div class="placeholder-copy"><span>04</span><b>ADD IFOS DASHBOARD 4</b><small>assets/ifos-4.png</small></div>
+                  <div class="media-grid"></div>
+                </div>
+                <div class="gallery-media placeholder-media">
+                  <img src="assets/ifos-5.png" alt="Additional analytics dashboard screenshot 5" loading="lazy" onerror="this.style.display='none'">
+                  <div class="placeholder-copy"><span>05</span><b>ADD IFOS DASHBOARD 5</b><small>assets/ifos-5.png</small></div>
+                  <div class="media-grid"></div>
+                </div>
+                <div class="gallery-media placeholder-media">
+                  <img src="assets/ifos-6.png" alt="Additional analytics dashboard screenshot 6" loading="lazy" onerror="this.style.display='none'">
+                  <div class="placeholder-copy"><span>06</span><b>ADD IFOS DASHBOARD 6</b><small>assets/ifos-6.png</small></div>
+                  <div class="media-grid"></div>
+                </div>
+                <div class="gallery-media placeholder-media">
+                  <img src="assets/ifos-7.png" alt="Additional analytics dashboard screenshot 7" loading="lazy" onerror="this.style.display='none'">
+                  <div class="placeholder-copy"><span>07</span><b>ADD IFOS DASHBOARD 7</b><small>assets/ifos-7.png</small></div>
+                  <div class="media-grid"></div>
+                </div>
+              </div>
+              <button class="gallery-carousel-nav gallery-carousel-prev" aria-label="Previous photo">❮</button>
+              <button class="gallery-carousel-nav gallery-carousel-next" aria-label="Next photo">❯</button>
+              <div class="gallery-carousel-dots"></div>
+            </div>
+            <div class="gallery-copy"><div><span>IFOS</span><h4>Integrated Flood Operation System Analytics Mockup</h4></div><div class="tags"><span>PowerBI</span><span>Python</span><span>Data Viz</span></div></div>
+          </article>
+
+          <article class="gallery-card gallery-wide reveal" data-gallery-title="RTM — Analytics Mockup">
+            <div class="gallery-carousel-container">
+              <div class="gallery-carousel-wrapper">
+                <div class="gallery-media placeholder-media">
+                  <img src="assets/rtm-1.png" alt="Additional analytics dashboard screenshot" loading="lazy" onerror="this.style.display='none'">
+                  <div class="placeholder-copy"><span>01</span><b>ADD RTM DASHBOARD</b><small>assets/rtm-1.png</small></div>
+                  <div class="media-grid"></div>
+                </div>
+                <div class="gallery-media placeholder-media">
+                  <img src="assets/rtm-2.png" alt="Additional analytics dashboard screenshot 2" loading="lazy" onerror="this.style.display='none'">
+                  <div class="placeholder-copy"><span>02</span><b>ADD RTM DASHBOARD 2</b><small>assets/rtm-2.png</small></div>
+                  <div class="media-grid"></div>
+                </div>
+                <div class="gallery-media placeholder-media">
+                  <img src="assets/rtm-3.png" alt="Additional analytics dashboard screenshot 3" loading="lazy" onerror="this.style.display='none'">
+                  <div class="placeholder-copy"><span>03</span><b>ADD RTM DASHBOARD 3</b><small>assets/rtm-3.png</small></div>
+                  <div class="media-grid"></div>
+                </div>
+              </div>
+              <button class="gallery-carousel-nav gallery-carousel-prev" aria-label="Previous photo">❮</button>
+              <button class="gallery-carousel-nav gallery-carousel-next" aria-label="Next photo">❯</button>
+              <div class="gallery-carousel-dots"></div>
+            </div>
+            <div class="gallery-copy"><div><span>RTM</span><h4>Radio Televisyen Malaysia Analytics Mockup</h4></div><div class="tags"><span>PowerBI</span><span>Python</span><span>Data Viz</span></div></div>
+          </article>
+
+          <article class="gallery-card gallery-wide reveal" data-gallery-title="SUPERSTORE — Sales Dashboard">
+            <div class="gallery-carousel-container">
+              <div class="gallery-carousel-wrapper">
+                <div class="gallery-media placeholder-media">
+                  <img src="assets/superstore-1.png" alt="Additional sales dashboard screenshot" loading="lazy" onerror="this.style.display='none'">
+                  <div class="placeholder-copy"><span>01</span><b>ADD SUPERSTORE DASHBOARD</b><small>assets/superstore-1.png</small></div>
+                  <div class="media-grid"></div>
+                </div>
+                <div class="gallery-media placeholder-media">
+                  <img src="assets/superstore-2.png" alt="Additional sales dashboard screenshot 2" loading="lazy" onerror="this.style.display='none'">
+                  <div class="placeholder-copy"><span>02</span><b>ADD SUPERSTORE DASHBOARD 2</b><small>assets/superstore-2.png</small></div>
+                  <div class="media-grid"></div>
+                </div>
+                <div class="gallery-media placeholder-media">
+                  <img src="assets/superstore-3.png" alt="Additional sales dashboard screenshot 3" loading="lazy" onerror="this.style.display='none'">
+                  <div class="placeholder-copy"><span>03</span><b>ADD SUPERSTORE DASHBOARD 3</b><small>assets/superstore-3.png</small></div>
+                  <div class="media-grid"></div>
+                </div>
+                <div class="gallery-media placeholder-media">
+                  <img src="assets/superstore-4.png" alt="Additional sales dashboard screenshot 4" loading="lazy" onerror="this.style.display='none'">
+                  <div class="placeholder-copy"><span>04</span><b>ADD SUPERSTORE DASHBOARD 4</b><small>assets/superstore-4.png</small></div>
+                  <div class="media-grid"></div>
+                </div>
+              </div>
+              <button class="gallery-carousel-nav gallery-carousel-prev" aria-label="Previous photo">❮</button>
+              <button class="gallery-carousel-nav gallery-carousel-next" aria-label="Next photo">❯</button>
+              <div class="gallery-carousel-dots"></div>
+            </div>
+            <div class="gallery-copy"><div><span>SUPERSTORE</span><h4>Superstore Sales Dashboard</h4></div><div class="tags"><span>Tableau</span><span>Kaggle</span><span>Data Viz</span></div></div>
+          </article>
+        </div>
+      </div>
+
+      <div class="showcase-block speaker-block">
+        <div class="showcase-label reveal">
+          <div><span class="showcase-kicker">SPEAKER & TRAINER</span><h3>Sharing what I know.</h3></div>
+          <p>I enjoy sharing knowledge and helping others understand technology through clear explanations, practical examples, and collaborative learning. These experiences have strengthened my communication, presentation, and mentoring skills.</p>
+        </div>
+        <div class="speaker-gallery">
+          <article class="speaker-card reveal">
+            <div class="speaker-photo placeholder-media">
+              <img src="assets/train-1.png" alt="Harith delivering Apache Superset training" loading="lazy" onerror="this.style.display='none'">
+              <div class="placeholder-copy"><span>LIVE</span><b>ADD TRAINING PHOTO</b><small>assets/train-1.png</small></div>
+              <div class="corner-frame"></div>
+            </div>
+            <div class="speaker-copy"><span>MAIN TRAINER • MAP2U</span><h4>Apache Superset Training</h4><p>Hands-on training covering dashboard development, visualization, filtering, and practical analytics workflows.</p></div>
+          </article>
+
+          <article class="speaker-card reveal">
+            <div class="speaker-photo placeholder-media">
+              <img src="assets/train-2.png" alt="Harith speaking at Python for Beginners program" loading="lazy" onerror="this.style.display='none'">
+              <div class="placeholder-copy"><span>LIVE</span><b>ADD TRAINING PHOTO</b><small>assets/train-2.png</small></div>
+              <div class="corner-frame"></div>
+            </div>
+            <div class="speaker-copy"><span>SPEAKER & TRAINER • ZANKO ACADEMY</span><h4>Python for Beginners</h4><p>Beginner-friendly programming sessions with practical Python concepts and Selenium automation demonstrations.</p></div>
+          </article>
+
+          <article class="speaker-card reveal">
+            <div class="speaker-photo placeholder-media">
+              <img src="assets/train-3.png" alt="Harith at a technical speaking or training event" loading="lazy" onerror="this.style.display='none'">
+              <div class="placeholder-copy"><span>LIVE</span><b>ADD TRAINING PHOTO</b><small>assets/train-3.png</small></div>
+              <div class="corner-frame"></div>
+            </div>
+          <div class="speaker-copy"><span>CYBERSECURITY AWARENESS • SULAM</span><h4>Knowledge Sharing</h4><p>Sharing insights and best practices on cyber threats and security measures.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-heading reveal"><span>05 / SKILLS</span><h2>Technology stack.</h2></div>
+      <div class="skills-layout">
+        <div class="skill-group glass-card reveal"><h3>Data Analysis & BI</h3><div class="chip-cloud"><span>SQL</span><span>Tableau</span><span>Power BI</span><span>AWS QuickSight</span><span>QuickBI</span><span>Apache Superset</span><span>Microsoft Report Builder</span><span>Excel</span></div></div>
+        <div class="skill-group glass-card reveal"><h3>Programming & Development</h3><div class="chip-cloud"><span>Python</span><span>JavaScript</span><span>Java</span><span>HTML</span><span>CSS</span><span>PHP</span><span>C++</span><span>R</span><span>JSON</span></div></div>
+        <div class="skill-group glass-card reveal"><h3>Full-Stack & Systems</h3><div class="chip-cloud"><span>React Native</span><span>Firebase</span><span>Laravel</span><span>Microsoft Dynamics GP</span><span>AWS CLI</span><span>Selenium</span></div></div>
+        <div class="skill-group glass-card reveal"><h3>Professional</h3><div class="chip-cloud"><span>Public Speaking</span><span>Technical Training</span><span>Data Storytelling</span><span>Stakeholder Communication</span><span>Cross-functional Collaboration</span></div></div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="section-heading reveal"><span>06 / EDUCATION</span><h2>Academic background.</h2></div>
+      <div class="education-grid">
+        <article class="glass-card reveal"><span class="edu-year">2023 — 2025</span><h3>Bachelor of Computer Science (Hons.)</h3><p>Netcentric Computing</p><b>UiTM Shah Alam, Selangor</b><div class="cgpa">CGPA <strong>3.38</strong></div></article>
+        <article class="glass-card reveal"><span class="edu-year">2020 — 2023</span><h3>Diploma in Computer Science</h3><p>Computer Science</p><b>UiTM Raub, Pahang</b><div class="cgpa">CGPA <strong>3.52</strong></div></article>
+      </div>
+      <div class="achievements glass-card reveal"><h3>Achievements</h3>
+        <p>• Leader of SULAM Digital Literacy Program at Kampung Budiman.</p>
+        <p>• Dean’s List — Degree (3rd & 4th Semester) and Diploma (1st & 3rd Semester).</p>
+        <p>• Anugerah Perak 2019 — Best Sports Prefect.</p>
+        <p>• Leader of Sports Prefect 2019</p>
+        <p>• Disciplinary Prefect 2019</p>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-card reveal">
+        <p class="eyebrow">LET'S BUILD SOMETHING USEFUL</p>
+        <h2>Have data. Need clarity?</h2>
+        <p>I’m open to Data Analyst, BI, reporting, dashboard, and analytics opportunities where data can create measurable impact.</p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:cwhirfan90@gmail.com">cwhirfan90@gmail.com</a>
+          <a class="btn btn-ghost" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/che-wan-harith-irfan-4b5132268/">LinkedIn Profile</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© <span id="year"></span> Che Wan Harith Irfan</span><span>Built for data-driven impact.</span></footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
