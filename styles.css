@@ -363,7 +363,7 @@ footer {border-top: 1px solid var(--line);color: #687b8f;display: flex;font: 500
 .badge-role {border-radius: 12px;display: grid;gap: 2px;left: 24px;padding: 10px 13px;top: 28px}
 .badge-role span {color: #6f8498;font-size: 8px;letter-spacing: 0.16em}
 .badge-role strong {color: #dff7ff;font-size: 10px;letter-spacing: 0.08em}
-.badge-status {align-items: center;border-radius: 999px;color: #9fefc6;display: flex;font-size: 9px;gap: 8px;letter-spacing: 0.1em;padding: 8px 11px;right: 22px;top: 105px}
+.badge-status {align-items: center;border-radius: 999px;color: #9fefc6;display: flex;font-size: 9px;gap: 8px;letter-spacing: 0.1em;padding: 8px 11px;right: 22px;top: 175px}
 .badge-status i {animation: statusBlink 2.4s ease-in-out infinite;background: #6ee7b7;border-radius: 50%;box-shadow: 0 0 14px #6ee7b7;height: 7px;width: 7px}
 .portrait-caption {align-items: center;bottom: 20px;display: flex;font-family: "JetBrains Mono";gap: 16px;justify-content: space-between;left: 25px;position: absolute;right: 25px;z-index: 4}
 .portrait-caption span {color: var(--cyan);font-size: 9px;letter-spacing: 0.16em}
@@ -407,7 +407,7 @@ footer {border-top: 1px solid var(--line);color: #687b8f;display: flex;font: 500
     min-height: 470px;border-radius: 22px}
   .portrait-frame {inset: 12px 8px 20px}
   .badge-role {left: 14px;top: 16px}
-  .badge-status {right: 14px;top: 82px}
+  .badge-status {right: 14px;top: 152px}
   .portrait-caption {left: 16px;right: 16px}
   .portrait-caption b {display: none}
   .orbit-one {height: 260px;width: 260px}
